@@ -667,6 +667,10 @@ extension Attribute where Element == Tag.Script {
     public static func nonce(_ value: String) -> Attribute {
         return .init("nonce", value)
     }
+
+    public static func integrity(_ value: String) -> Attribute {
+        return .init("integrity", value)
+    }
 }
 
 extension Attribute where Element == Tag.Source {
