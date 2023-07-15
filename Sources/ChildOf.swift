@@ -217,6 +217,10 @@ extension ChildOf where Element == Tag.Head {
         return self.meta(attributes: [.init("name", "description"), .content(description)])
     }
 
+    public static func meta(charset: String) -> ChildOf {
+        return self.meta(attributes: [.init("charset", charset)])
+    }
+
     public static func meta(generator: String) -> ChildOf {
         return self.meta(attributes: [.init("name", "generator"), .content(generator)])
     }
