@@ -536,13 +536,6 @@ extension Attribute where Element == Tag.Iframe {
     public static func sandbox(_ value: Bool) -> Attribute {
         return .init("sandbox", value ? "" : nil)
     }
-
-    /// A document to render in the `iframe`.
-    ///
-    /// - Parameter value: A document to render in the `iframe`.
-    public static func srcdoc(_ value: Node...) -> Attribute {
-        return .init("srcdoc", render(value))
-    }
 }
 
 public enum InputType: String {

@@ -47,7 +47,7 @@ extension Node {
     }
 
     /// A set of self-closing "void" elements that should not contain child nodes.
-    public let voidElements: Set<String> = [
+    public static let voidElements: Set<String> = [
         "area",
         "base",
         "br",
@@ -79,7 +79,7 @@ extension Node {
             output.append(tag)
             self.render(attribs, into: &output)
             output.append(">")
-            if !children.isEmpty || !self.voidElements.contains(tag) {
+            if !children.isEmpty || !Self.voidElements.contains(tag) {
                 output.append(self.render(children))
                 output.append("</")
                 output.append(tag)

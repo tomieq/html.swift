@@ -5,12 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "html.swift",
+    products: [
+        .library(
+            name: "html.swift",
+            targets: ["html.swift"]),
+    ],
     dependencies: [
     ],
     targets: [
-        .executableTarget(
+        .target(
             name: "html.swift",
             dependencies: [],
-            path: "Sources")
+            path: "Sources"),
     ]
 )

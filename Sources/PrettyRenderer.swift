@@ -51,7 +51,7 @@ extension Node {
                 }
                 output.append(">")
                 output.append(config.newline)
-                guard !children.isEmpty || !voidElements.contains(tag) else { return }
+                guard !children.isEmpty || !Self.voidElements.contains(tag) else { return }
                 prettyRenderHelp(children, into: &output, config: config, indentation: indentation + config.indentation)
                 output.append(indentation)
                 output.append("</")
