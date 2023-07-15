@@ -8,6 +8,11 @@ public struct Attribute<Element> {
         self.key = key
         self.value = value
     }
+
+    public init(_ key: String, _ value: CustomStringConvertible?) {
+        self.key = key
+        self.value = value?.description
+    }
 }
 
 extension Attribute {

@@ -5,11 +5,17 @@ extension Attribute {
     public static func onblur(_ javascript: String) -> Attribute {
         return .init("onblur", javascript)
     }
+    public static func onblur(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onblur", javascript)
+    }
 
     /// Execute JavaScript when an element is clicked.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onclick(_ javascript: String) -> Attribute {
+        return .init("onclick", javascript)
+    }
+    public static func onclick(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onclick", javascript)
     }
 
@@ -19,11 +25,17 @@ extension Attribute {
     public static func oncontextmenu(_ javascript: String) -> Attribute {
         return .init("oncontextmenu", javascript)
     }
+    public static func oncontextmenu(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("oncontextmenu", javascript)
+    }
 
     /// Execute JavaScript when copying some text of an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func oncopy(_ javascript: String) -> Attribute {
+        return .init("oncopy", javascript)
+    }
+    public static func oncopy(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("oncopy", javascript)
     }
 
@@ -33,11 +45,17 @@ extension Attribute {
     public static func oncut(_ javascript: String) -> Attribute {
         return .init("oncut", javascript)
     }
+    public static func oncut(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("oncut", javascript)
+    }
 
     /// Execute JavaScript when an element is double-clicked.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func ondblclick(_ javascript: String) -> Attribute {
+        return .init("ondblclick", javascript)
+    }
+    public static func ondblclick(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("ondblclick", javascript)
     }
 
@@ -47,11 +65,17 @@ extension Attribute {
     public static func ondrag(_ javascript: String) -> Attribute {
         return .init("ondrag", javascript)
     }
+    public static func ondrag(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("ondrag", javascript)
+    }
 
     /// Execute JavaScript when the user has finished dragging an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func ondragend(_ javascript: String) -> Attribute {
+        return .init("ondragend", javascript)
+    }
+    public static func ondragend(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("ondragend", javascript)
     }
 
@@ -61,11 +85,17 @@ extension Attribute {
     public static func ondragenter(_ javascript: String) -> Attribute {
         return .init("ondragenter", javascript)
     }
+    public static func ondragenter(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("ondragenter", javascript)
+    }
 
     /// Execute JavaScript when an element is being dragged over a drop target.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func ondragover(_ javascript: String) -> Attribute {
+        return .init("ondragover", javascript)
+    }
+    public static func ondragover(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("ondragover", javascript)
     }
 
@@ -75,11 +105,17 @@ extension Attribute {
     public static func ondragstart(_ javascript: String) -> Attribute {
         return .init("ondragstart", javascript)
     }
+    public static func ondragstart(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("ondragstart", javascript)
+    }
 
     /// Execute JavaScript when a draggable element is dropped in the element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func ondrop(_ javascript: String) -> Attribute {
+        return .init("ondrop", javascript)
+    }
+    public static func ondrop(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("ondrop", javascript)
     }
 
@@ -89,11 +125,17 @@ extension Attribute {
     public static func onfocus(_ javascript: String) -> Attribute {
         return .init("onfocus", javascript)
     }
+    public static func onfocus(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onfocus", javascript)
+    }
 
     /// Execute JavaScript when a user is pressing a key.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onkeydown(_ javascript: String) -> Attribute {
+        return .init("onkeydown", javascript)
+    }
+    public static func onkeydown(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onkeydown", javascript)
     }
 
@@ -103,11 +145,17 @@ extension Attribute {
     public static func onkeypress(_ javascript: String) -> Attribute {
         return .init("onkeypress", javascript)
     }
+    public static func onkeypress(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onkeypress", javascript)
+    }
 
     /// Execute JavaScript when a user releases a key.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onkeyup(_ javascript: String) -> Attribute {
+        return .init("onkeyup", javascript)
+    }
+    public static func onkeyup(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onkeyup", javascript)
     }
 
@@ -117,11 +165,17 @@ extension Attribute {
     public static func onmousedown(_ javascript: String) -> Attribute {
         return .init("onmousedown", javascript)
     }
+    public static func onmousedown(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onmousedown", javascript)
+    }
 
     /// Execute JavaScript when moving the mouse pointer over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onmousemove(_ javascript: String) -> Attribute {
+        return .init("onmousemove", javascript)
+    }
+    public static func onmousemove(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onmousemove", javascript)
     }
 
@@ -131,11 +185,17 @@ extension Attribute {
     public static func onmouseout(_ javascript: String) -> Attribute {
         return .init("onmouseout", javascript)
     }
+    public static func onmouseout(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onmouseout", javascript)
+    }
 
     /// Execute JavaScript when moving the mouse pointer over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onmouseover(_ javascript: String) -> Attribute {
+        return .init("onmouseover", javascript)
+    }
+    public static func onmouseover(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onmouseover", javascript)
     }
 
@@ -145,11 +205,17 @@ extension Attribute {
     public static func onmouseup(_ javascript: String) -> Attribute {
         return .init("onmouseup", javascript)
     }
+    public static func onmouseup(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onmouseup", javascript)
+    }
 
     /// Execute JavaScript when pasting some text in an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onpaste(_ javascript: String) -> Attribute {
+        return .init("onpaste", javascript)
+    }
+    public static func onpaste(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onpaste", javascript)
     }
 
@@ -159,11 +225,17 @@ extension Attribute {
     public static func onscroll(_ javascript: String) -> Attribute {
         return .init("onscroll", javascript)
     }
+    public static func onscroll(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onscroll", javascript)
+    }
 
     /// Execute JavaScript when the user rolls the mouse wheel over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onwheel(_ javascript: String) -> Attribute {
+        return .init("onwheel", javascript)
+    }
+    public static func onwheel(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onwheel", javascript)
     }
 }
@@ -175,11 +247,17 @@ extension Attribute where Element == Tag.Body {
     public static func onafterprint(_ javascript: String) -> Attribute {
         return .init("onafterprint", javascript)
     }
+    public static func onafterprint(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onafterprint", javascript)
+    }
 
     /// Execute JavaScript when a page is about to be printed.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onbeforeprint(_ javascript: String) -> Attribute {
+        return .init("onbeforeprint", javascript)
+    }
+    public static func onbeforeprint(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onbeforeprint", javascript)
     }
 
@@ -189,6 +267,9 @@ extension Attribute where Element == Tag.Body {
     public static func onbeforeunload(_ javascript: String) -> Attribute {
         return .init("onbeforeunload", javascript)
     }
+    public static func onbeforeunload(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onbeforeunload", javascript)
+    }
 
     /// Execute JavaScript when the anchor part has been changed.
     ///
@@ -196,8 +277,14 @@ extension Attribute where Element == Tag.Body {
     public static func onhashchange(_ javascript: String) -> Attribute {
         return .init("onhashchange", javascript)
     }
+    public static func onhashchange(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onhashchange", javascript)
+    }
 
     public static func onmessage(_ javascript: String) -> Attribute {
+        return .init("onmessage", javascript)
+    }
+    public static func onmessage(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onmessage", javascript)
     }
 
@@ -207,11 +294,17 @@ extension Attribute where Element == Tag.Body {
     public static func onoffline(_ javascript: String) -> Attribute {
         return .init("onoffline", javascript)
     }
+    public static func onoffline(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onoffline", javascript)
+    }
 
     /// Execute JavaScript when the browser starts to work online.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func ononline(_ javascript: String) -> Attribute {
+        return .init("ononline", javascript)
+    }
+    public static func ononline(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("ononline", javascript)
     }
 
@@ -221,6 +314,9 @@ extension Attribute where Element == Tag.Body {
     public static func onpagehide(_ javascript: String) -> Attribute {
         return .init("onpagehide", javascript)
     }
+    public static func onpagehide(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onpagehide", javascript)
+    }
 
     /// Execute JavaScript when a user navigates to a webpage.
     ///
@@ -228,8 +324,14 @@ extension Attribute where Element == Tag.Body {
     public static func onpageshow(_ javascript: String) -> Attribute {
         return .init("onpageshow", javascript)
     }
+    public static func onpageshow(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onpageshow", javascript)
+    }
 
     public static func onpopstate(_ javascript: String) -> Attribute {
+        return .init("onpopstate", javascript)
+    }
+    public static func onpopstate(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onpopstate", javascript)
     }
 
@@ -239,8 +341,14 @@ extension Attribute where Element == Tag.Body {
     public static func onresize(_ javascript: String) -> Attribute {
         return .init("onresize", javascript)
     }
+    public static func onresize(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onresize", javascript)
+    }
 
     public static func onstorage(_ javascript: String) -> Attribute {
+        return .init("onstorage", javascript)
+    }
+    public static func onstorage(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onstorage", javascript)
     }
 
@@ -248,6 +356,9 @@ extension Attribute where Element == Tag.Body {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onunload(_ javascript: String) -> Attribute {
+        return .init("onunload", javascript)
+    }
+    public static func onunload(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onunload", javascript)
     }
 }
@@ -259,6 +370,9 @@ extension Attribute where Element == Tag.Details {
     public static func ontoggle(_ javascript: String) -> Attribute {
         return .init("ontoggle", javascript)
     }
+    public static func ontoggle(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("ontoggle", javascript)
+    }
 }
 
 extension Attribute where Element == Tag.Form {
@@ -268,11 +382,17 @@ extension Attribute where Element == Tag.Form {
     public static func onreset(_ javascript: String) -> Attribute {
         return .init("onreset", javascript)
     }
+    public static func onreset(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onreset", javascript)
+    }
 
     /// Execute JavaScript when a form is submitted.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onsubmit(_ javascript: String) -> Attribute {
+        return .init("onsubmit", javascript)
+    }
+    public static func onsubmit(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onsubmit", javascript)
     }
 }
@@ -284,11 +404,17 @@ extension Attribute where Element == Tag.Input {
     public static func oninvalid(_ javascript: String) -> Attribute {
         return .init("oninvalid", javascript)
     }
+    public static func oninvalid(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("oninvalid", javascript)
+    }
 
     /// Execute JavaScript when submitting a search.
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onsearch(_ javascript: String) -> Attribute {
+        return .init("onsearch", javascript)
+    }
+    public static func onsearch(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onsearch", javascript)
     }
 }
@@ -308,6 +434,9 @@ extension Attribute where Element: HasOnabort {
     public static func onabort(_ javascript: String) -> Attribute {
         return .init("onabort", javascript)
     }
+    public static func onabort(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onabort", javascript)
+    }
 }
 
 extension Attribute where Element == Tag.Track {
@@ -315,6 +444,10 @@ extension Attribute where Element == Tag.Track {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func oncuechange(_ javascript: String) -> Attribute {
+        return .init("oncuechange", javascript)
+    }
+
+    public static func oncuechange(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("oncuechange", javascript)
     }
 }
@@ -333,6 +466,10 @@ extension Attribute where Element: HasOncanplay {
     public static func oncanplay(_ javascript: String) -> Attribute {
         return .init("oncanplay", javascript)
     }
+
+    public static func oncanplay(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("oncanplay", javascript)
+    }
 }
 
 public protocol HasOncanplaythrough {}
@@ -345,6 +482,10 @@ extension Attribute where Element: HasOncanplaythrough {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func oncanplaythrough(_ javascript: String) -> Attribute {
+        return .init("oncanplaythrough", javascript)
+    }
+
+    public static func oncanplaythrough(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("oncanplaythrough", javascript)
     }
 }
@@ -362,6 +503,10 @@ extension Attribute where Element: HasOnchange {
     public static func onchange(_ javascript: String) -> Attribute {
         return .init("onchange", javascript)
     }
+
+    public static func onchange(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onchange", javascript)
+    }
 }
 
 public protocol HasOndurationchange {}
@@ -376,6 +521,10 @@ extension Attribute where Element: HasOndurationchange {
     public static func ondurationchange(_ javascript: String) -> Attribute {
         return .init("ondurationchange", javascript)
     }
+
+    public static func ondurationchange(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("ondurationchange", javascript)
+    }
 }
 
 public protocol HasOnemptied {}
@@ -385,6 +534,10 @@ extension Tag.Video: HasOnemptied {}
 
 extension Attribute where Element: HasOnemptied {
     public static func onemptied(_ javascript: String) -> Attribute {
+        return .init("onemptied", javascript)
+    }
+
+    public static func onemptied(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onemptied", javascript)
     }
 }
@@ -399,6 +552,10 @@ extension Attribute where Element: HasOnended {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onended(_ javascript: String) -> Attribute {
+        return .init("onended", javascript)
+    }
+
+    public static func onended(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onended", javascript)
     }
 }
@@ -417,6 +574,10 @@ extension Attribute where Element: HasOnerror {
     public static func onerror(_ javascript: String) -> Attribute {
         return .init("onerror", javascript)
     }
+
+    public static func onerror(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onerror", javascript)
+    }
 }
 
 public protocol HasOninput {}
@@ -429,6 +590,10 @@ extension Attribute where Element: HasOninput {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func oninput(_ javascript: String) -> Attribute {
+        return .init("oninput", javascript)
+    }
+
+    public static func oninput(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("oninput", javascript)
     }
 }
@@ -450,6 +615,10 @@ extension Attribute where Element: HasOnload {
     public static func onload(_ javascript: String) -> Attribute {
         return .init("onload", javascript)
     }
+
+    public static func onload(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onload", javascript)
+    }
 }
 
 public protocol HasOnloadeddata {}
@@ -459,6 +628,10 @@ extension Tag.Video: HasOnloadeddata {}
 
 extension Attribute where Element: HasOnloadeddata {
     public static func onloadeddata(_ javascript: String) -> Attribute {
+        return .init("onloadeddata", javascript)
+    }
+
+    public static func onloadeddata(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onloadeddata", javascript)
     }
 }
@@ -472,6 +645,10 @@ extension Attribute where Element: HasOnloadedmetadata {
     public static func onloadedmetadata(_ javascript: String) -> Attribute {
         return .init("onloadedmetadata", javascript)
     }
+
+    public static func onloadedmetadata(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onloadedmetadata", javascript)
+    }
 }
 
 public protocol HasOnloadstart {}
@@ -481,6 +658,10 @@ extension Tag.Video: HasOnloadstart {}
 
 extension Attribute where Element: HasOnloadstart {
     public static func onloadstart(_ javascript: String) -> Attribute {
+        return .init("onloadstart", javascript)
+    }
+
+    public static func onloadstart(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onloadstart", javascript)
     }
 }
@@ -497,6 +678,10 @@ extension Attribute where Element: HasOnpause {
     public static func onpause(_ javascript: String) -> Attribute {
         return .init("onpause", javascript)
     }
+
+    public static func onpause(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onpause", javascript)
+    }
 }
 
 public protocol HasOnplay {}
@@ -509,6 +694,10 @@ extension Attribute where Element: HasOnplay {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onplay(_ javascript: String) -> Attribute {
+        return .init("onplay", javascript)
+    }
+
+    public static func onplay(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onplay", javascript)
     }
 }
@@ -525,6 +714,10 @@ extension Attribute where Element: HasOnplaying {
     public static func onplaying(_ javascript: String) -> Attribute {
         return .init("onplaying", javascript)
     }
+
+    public static func onplaying(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onplaying", javascript)
+    }
 }
 
 public protocol HasOnprogress {}
@@ -537,6 +730,10 @@ extension Attribute where Element: HasOnprogress {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onprogress(_ javascript: String) -> Attribute {
+        return .init("onprogress", javascript)
+    }
+
+    public static func onprogress(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onprogress", javascript)
     }
 }
@@ -553,6 +750,10 @@ extension Attribute where Element: HasOnratechange {
     public static func onratechange(_ javascript: String) -> Attribute {
         return .init("onratechange", javascript)
     }
+
+    public static func onratechange(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onratechange", javascript)
+    }
 }
 
 public protocol HasOnseeked {}
@@ -565,6 +766,10 @@ extension Attribute where Element: HasOnseeked {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onseeked(_ javascript: String) -> Attribute {
+        return .init("onseeked", javascript)
+    }
+
+    public static func onseeked(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onseeked", javascript)
     }
 }
@@ -581,6 +786,10 @@ extension Attribute where Element: HasOnseeking {
     public static func onseeking(_ javascript: String) -> Attribute {
         return .init("onseeking", javascript)
     }
+
+    public static func onseeking(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onseeking", javascript)
+    }
 }
 
 public protocol HasOnselect {}
@@ -593,6 +802,10 @@ extension Attribute where Element: HasOnselect {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onselect(_ javascript: String) -> Attribute {
+        return .init("onselect", javascript)
+    }
+
+    public static func onselect(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onselect", javascript)
     }
 }
@@ -609,6 +822,10 @@ extension Attribute where Element: HasOnstalled {
     public static func onstalled(_ javascript: String) -> Attribute {
         return .init("onstalled", javascript)
     }
+
+    public static func onstalled(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onstalled", javascript)
+    }
 }
 
 public protocol HasOnsuspend {}
@@ -621,6 +838,10 @@ extension Attribute where Element: HasOnsuspend {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onsuspend(_ javascript: String) -> Attribute {
+        return .init("onsuspend", javascript)
+    }
+
+    public static func onsuspend(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onsuspend", javascript)
     }
 }
@@ -637,6 +858,10 @@ extension Attribute where Element: HasOntimeupdate {
     public static func ontimeupdate(_ javascript: String) -> Attribute {
         return .init("ontimeupdate", javascript)
     }
+
+    public static func ontimeupdate(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("ontimeupdate", javascript)
+    }
 }
 
 public protocol HasOnvolumechange {}
@@ -651,6 +876,10 @@ extension Attribute where Element: HasOnvolumechange {
     public static func onvolumechange(_ javascript: String) -> Attribute {
         return .init("onvolumechange", javascript)
     }
+
+    public static func onvolumechange(_ javascript: CustomStringConvertible) -> Attribute {
+        return .init("onvolumechange", javascript)
+    }
 }
 
 public protocol HasOnwaiting {}
@@ -663,6 +892,10 @@ extension Attribute where Element: HasOnwaiting {
     ///
     /// - Parameter javascript: JavaScript to execute.
     public static func onwaiting(_ javascript: String) -> Attribute {
+        return .init("onwaiting", javascript)
+    }
+
+    public static func onwaiting(_ javascript: CustomStringConvertible) -> Attribute {
         return .init("onwaiting", javascript)
     }
 }

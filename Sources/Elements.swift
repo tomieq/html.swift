@@ -635,6 +635,10 @@ extension Node {
         return .element("script", attributes: attributes, [.raw(escape(rawText: content, for: "script"))])
     }
 
+    public static func script(attributes: [Attribute<Tag.Script>] = [], _ content: CustomStringConvertible) -> Node {
+        return .element("script", attributes: attributes, [.raw(escape(rawText: content.description, for: "script"))])
+    }
+
     /// The `<section>` element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each `<section>` should be identified, typically by including a heading (`<h1>`-`<h6>` element) as a child of the section element.
     ///
     /// - Parameters:
@@ -698,8 +702,8 @@ extension Node {
         return .element("sup", attributes: attributes, .fragment(content))
     }
 
-    public static func svg(attributes: [Attribute<Tag.Svg>] = [], safe content: StaticString) -> Node {
-        return self.svg(attributes: attributes, String(describing: content))
+    public static func svg(attributes: [Attribute<Tag.Svg>] = [], content: CustomStringConvertible) -> Node {
+        return self.svg(attributes: attributes, content.description)
     }
 
     public static func svg(attributes: [Attribute<Tag.Svg>] = [], _ content: String) -> Node {
