@@ -302,14 +302,7 @@ extension Attribute {
     /// This is a style attribute as defined by the _CSS Style Attributes_ specification.
     ///
     /// - Parameter value: A CSS style.
-    public static func style(safe value: StaticString) -> Attribute {
-        return self.style(unsafe: String(describing: value))
-    }
-
-    /// This is a style attribute as defined by the _CSS Style Attributes_ specification.
-    ///
-    /// - Parameter value: A CSS style.
-    public static func style(unsafe value: String) -> Attribute {
+    public static func style(_ value: String) -> Attribute {
         return .init("style", String(describing: value))
     }
 

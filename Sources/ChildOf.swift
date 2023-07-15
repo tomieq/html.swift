@@ -22,7 +22,7 @@ extension ChildOf {
     ///
     /// - Parameter attributes: Attributes.
     public static func script(attributes: [Attribute<Tag.Script>]) -> ChildOf {
-        return self.script(attributes: attributes, safe: "")
+        return self.script(attributes: attributes, "")
     }
 
     /// The `<script>` element allows authors to include dynamic script and data blocks in their documents. The element does not represent content for the user.
@@ -30,17 +30,8 @@ extension ChildOf {
     /// - Parameters:
     ///   - attributes: Attributes.
     ///   - content: JavaScript.
-    public static func script(attributes: [Attribute<Tag.Script>] = [], safe content: StaticString) -> ChildOf {
-        return .init(.script(attributes: attributes, safe: content))
-    }
-
-    /// The `<script>` element allows authors to include dynamic script and data blocks in their documents. The element does not represent content for the user.
-    ///
-    /// - Parameters:
-    ///   - attributes: Attributes.
-    ///   - content: JavaScript.
-    public static func script(attributes: [Attribute<Tag.Script>] = [], unsafe content: String = "") -> ChildOf {
-        return .init(.script(attributes: attributes, unsafe: content))
+    public static func script(attributes: [Attribute<Tag.Script>] = [], _ content: String = "") -> ChildOf {
+        return .init(.script(attributes: attributes, content))
     }
 
     public static func template(attributes: [Attribute<Tag.Template>] = [], _ content: Node...) -> ChildOf {
@@ -252,16 +243,7 @@ extension ChildOf where Element == Tag.Head {
     /// - Parameters:
     ///   - attributes: Attributes.
     ///   - content: A CSS string.
-    public static func style(attributes: [Attribute<Tag.Style>] = [], safe content: StaticString) -> ChildOf {
-        return self.style(attributes: attributes, unsafe: String(describing: content))
-    }
-
-    /// The `<style>` element allows authors to embed style information in their documents.
-    ///
-    /// - Parameters:
-    ///   - attributes: Attributes.
-    ///   - content: A CSS string.
-    public static func style(attributes: [Attribute<Tag.Style>] = [], unsafe content: String) -> ChildOf {
+    public static func style(attributes: [Attribute<Tag.Style>] = [], _ content: String) -> ChildOf {
         return .init(.element("style", attributes: attributes, [.raw(escape(rawText: content, for: "style"))]))
     }
 

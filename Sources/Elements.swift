@@ -623,7 +623,7 @@ extension Node {
     ///
     /// - Parameter attributes: Attributes.
     public static func script(attributes: [Attribute<Tag.Script>]) -> Node {
-        return self.script(attributes: attributes, safe: "")
+        return self.script(attributes: attributes, "")
     }
 
     /// The `<script>` element allows authors to include dynamic script and data blocks in their documents. The element does not represent content for the user.
@@ -631,16 +631,7 @@ extension Node {
     /// - Parameters:
     ///   - attributes: Attributes.
     ///   - content: JavaScript.
-    public static func script(attributes: [Attribute<Tag.Script>] = [], safe content: StaticString) -> Node {
-        return self.script(attributes: attributes, unsafe: String(describing: content))
-    }
-
-    /// The `<script>` element allows authors to include dynamic script and data blocks in their documents. The element does not represent content for the user.
-    ///
-    /// - Parameters:
-    ///   - attributes: Attributes.
-    ///   - content: JavaScript.
-    public static func script(attributes: [Attribute<Tag.Script>] = [], unsafe content: String) -> Node {
+    public static func script(attributes: [Attribute<Tag.Script>] = [], _ content: String) -> Node {
         return .element("script", attributes: attributes, [.raw(escape(rawText: content, for: "script"))])
     }
 
@@ -708,10 +699,10 @@ extension Node {
     }
 
     public static func svg(attributes: [Attribute<Tag.Svg>] = [], safe content: StaticString) -> Node {
-        return self.svg(attributes: attributes, unsafe: String(describing: content))
+        return self.svg(attributes: attributes, String(describing: content))
     }
 
-    public static func svg(attributes: [Attribute<Tag.Svg>] = [], unsafe content: String) -> Node {
+    public static func svg(attributes: [Attribute<Tag.Svg>] = [], _ content: String) -> Node {
         return .element("svg", attributes: attributes, [.raw(content)])
     }
 

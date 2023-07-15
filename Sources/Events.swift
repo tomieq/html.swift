@@ -2,336 +2,168 @@ extension Attribute {
     /// Execute JavaScript when a user leaves an input field.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onblur(safe javascript: StaticString) -> Attribute {
-        return self.onblur(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user leaves an input field.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onblur(unsafe javascript: String) -> Attribute {
+    public static func onblur(_ javascript: String) -> Attribute {
         return .init("onblur", javascript)
     }
 
     /// Execute JavaScript when an element is clicked.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onclick(safe javascript: StaticString) -> Attribute {
-        return self.onclick(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an element is clicked.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onclick(unsafe javascript: String) -> Attribute {
+    public static func onclick(_ javascript: String) -> Attribute {
         return .init("onclick", javascript)
     }
 
     /// Execute JavaScript when the user right-clicks on an element with a context menu.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oncontextmenu(safe javascript: StaticString) -> Attribute {
-        return self.oncontextmenu(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user right-clicks on an element with a context menu.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oncontextmenu(unsafe javascript: String) -> Attribute {
+    public static func oncontextmenu(_ javascript: String) -> Attribute {
         return .init("oncontextmenu", javascript)
     }
 
     /// Execute JavaScript when copying some text of an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oncopy(safe javascript: StaticString) -> Attribute {
-        return self.oncopy(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when copying some text of an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oncopy(unsafe javascript: String) -> Attribute {
+    public static func oncopy(_ javascript: String) -> Attribute {
         return .init("oncopy", javascript)
     }
 
     /// Execute JavaScript when cutting some text in an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oncut(safe javascript: StaticString) -> Attribute {
-        return self.oncut(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when cutting some text in an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oncut(unsafe javascript: String) -> Attribute {
+    public static func oncut(_ javascript: String) -> Attribute {
         return .init("oncut", javascript)
     }
 
     /// Execute JavaScript when an element is double-clicked.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondblclick(safe javascript: StaticString) -> Attribute {
-        return self.ondblclick(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an element is double-clicked.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondblclick(unsafe javascript: String) -> Attribute {
+    public static func ondblclick(_ javascript: String) -> Attribute {
         return .init("ondblclick", javascript)
     }
 
     /// Execute JavaScript when an element is being dragged.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondrag(safe javascript: StaticString) -> Attribute {
-        return self.ondrag(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an element is being dragged.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondrag(unsafe javascript: String) -> Attribute {
+    public static func ondrag(_ javascript: String) -> Attribute {
         return .init("ondrag", javascript)
     }
 
     /// Execute JavaScript when the user has finished dragging an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondragend(safe javascript: StaticString) -> Attribute {
-        return self.ondragend(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user has finished dragging an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondragend(unsafe javascript: String) -> Attribute {
+    public static func ondragend(_ javascript: String) -> Attribute {
         return .init("ondragend", javascript)
     }
 
     /// Execute JavaScript when a draggable element enters a drop target.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondragenter(safe javascript: StaticString) -> Attribute {
-        return self.ondragenter(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a draggable element enters a drop target.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondragenter(unsafe javascript: String) -> Attribute {
+    public static func ondragenter(_ javascript: String) -> Attribute {
         return .init("ondragenter", javascript)
     }
 
     /// Execute JavaScript when an element is being dragged over a drop target.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondragover(safe javascript: StaticString) -> Attribute {
-        return self.ondragover(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an element is being dragged over a drop target.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondragover(unsafe javascript: String) -> Attribute {
+    public static func ondragover(_ javascript: String) -> Attribute {
         return .init("ondragover", javascript)
     }
 
     /// Execute JavaScript when the user starts to drag an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondragstart(safe javascript: StaticString) -> Attribute {
-        return self.ondragstart(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user starts to drag an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondragstart(unsafe javascript: String) -> Attribute {
+    public static func ondragstart(_ javascript: String) -> Attribute {
         return .init("ondragstart", javascript)
     }
 
     /// Execute JavaScript when a draggable element is dropped in the element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondrop(safe javascript: StaticString) -> Attribute {
-        return self.ondrop(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a draggable element is dropped in the element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondrop(unsafe javascript: String) -> Attribute {
+    public static func ondrop(_ javascript: String) -> Attribute {
         return .init("ondrop", javascript)
     }
 
     /// Execute JavaScript when an element gets focus.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onfocus(safe javascript: StaticString) -> Attribute {
-        return self.onfocus(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an element gets focus.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onfocus(unsafe javascript: String) -> Attribute {
+    public static func onfocus(_ javascript: String) -> Attribute {
         return .init("onfocus", javascript)
     }
 
     /// Execute JavaScript when a user is pressing a key.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onkeydown(safe javascript: StaticString) -> Attribute {
-        return self.onkeydown(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user is pressing a key.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onkeydown(unsafe javascript: String) -> Attribute {
+    public static func onkeydown(_ javascript: String) -> Attribute {
         return .init("onkeydown", javascript)
     }
 
     /// Execute JavaScript when a user presses a key.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onkeypress(safe javascript: StaticString) -> Attribute {
-        return self.onkeypress(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user presses a key.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onkeypress(unsafe javascript: String) -> Attribute {
+    public static func onkeypress(_ javascript: String) -> Attribute {
         return .init("onkeypress", javascript)
     }
 
     /// Execute JavaScript when a user releases a key.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onkeyup(safe javascript: StaticString) -> Attribute {
-        return self.onkeyup(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user releases a key.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onkeyup(unsafe javascript: String) -> Attribute {
+    public static func onkeyup(_ javascript: String) -> Attribute {
         return .init("onkeyup", javascript)
     }
 
     /// Execute JavaScript when pressing a mouse button over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onmousedown(safe javascript: StaticString) -> Attribute {
-        return self.onmousedown(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when pressing a mouse button over an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onmousedown(unsafe javascript: String) -> Attribute {
+    public static func onmousedown(_ javascript: String) -> Attribute {
         return .init("onmousedown", javascript)
     }
 
     /// Execute JavaScript when moving the mouse pointer over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onmousemove(safe javascript: StaticString) -> Attribute {
-        return self.onmousemove(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when moving the mouse pointer over an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onmousemove(unsafe javascript: String) -> Attribute {
+    public static func onmousemove(_ javascript: String) -> Attribute {
         return .init("onmousemove", javascript)
     }
 
     /// Execute JavaScript when moving the mouse pointer out of an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onmouseout(safe javascript: StaticString) -> Attribute {
-        return self.onmouseout(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when moving the mouse pointer out of an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onmouseout(unsafe javascript: String) -> Attribute {
+    public static func onmouseout(_ javascript: String) -> Attribute {
         return .init("onmouseout", javascript)
     }
 
     /// Execute JavaScript when moving the mouse pointer over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onmouseover(safe javascript: StaticString) -> Attribute {
-        return self.onmouseover(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when moving the mouse pointer over an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onmouseover(unsafe javascript: String) -> Attribute {
+    public static func onmouseover(_ javascript: String) -> Attribute {
         return .init("onmouseover", javascript)
     }
 
     /// Execute JavaScript when releasing a mouse button over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onmouseup(safe javascript: StaticString) -> Attribute {
-        return self.onmouseup(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when releasing a mouse button over an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onmouseup(unsafe javascript: String) -> Attribute {
+    public static func onmouseup(_ javascript: String) -> Attribute {
         return .init("onmouseup", javascript)
     }
 
     /// Execute JavaScript when pasting some text in an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onpaste(safe javascript: StaticString) -> Attribute {
-        return self.onpaste(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when pasting some text in an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onpaste(unsafe javascript: String) -> Attribute {
+    public static func onpaste(_ javascript: String) -> Attribute {
         return .init("onpaste", javascript)
     }
 
     /// Execute JavaScript when an element is being scrolled.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onscroll(safe javascript: StaticString) -> Attribute {
-        return self.onscroll(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an element is being scrolled.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onscroll(unsafe javascript: String) -> Attribute {
+    public static func onscroll(_ javascript: String) -> Attribute {
         return .init("onscroll", javascript)
     }
 
     /// Execute JavaScript when the user rolls the mouse wheel over an element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onwheel(safe javascript: StaticString) -> Attribute {
-        return self.onwheel(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user rolls the mouse wheel over an element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onwheel(unsafe javascript: String) -> Attribute {
+    public static func onwheel(_ javascript: String) -> Attribute {
         return .init("onwheel", javascript)
     }
 }
@@ -340,164 +172,82 @@ extension Attribute where Element == Tag.Body {
     /// Execute JavaScript when a page has started printing.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onafterprint(safe javascript: StaticString) -> Attribute {
-        return self.onafterprint(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a page has started printing.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onafterprint(unsafe javascript: String) -> Attribute {
+    public static func onafterprint(_ javascript: String) -> Attribute {
         return .init("onafterprint", javascript)
     }
 
     /// Execute JavaScript when a page is about to be printed.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onbeforeprint(safe javascript: StaticString) -> Attribute {
-        return self.onbeforeprint(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a page is about to be printed.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onbeforeprint(unsafe javascript: String) -> Attribute {
+    public static func onbeforeprint(_ javascript: String) -> Attribute {
         return .init("onbeforeprint", javascript)
     }
 
     /// Execute JavaScript when the page is about to be unloaded.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onbeforeunload(safe javascript: StaticString) -> Attribute {
-        return self.onbeforeunload(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the page is about to be unloaded.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onbeforeunload(unsafe javascript: String) -> Attribute {
+    public static func onbeforeunload(_ javascript: String) -> Attribute {
         return .init("onbeforeunload", javascript)
     }
 
     /// Execute JavaScript when the anchor part has been changed.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onhashchange(safe javascript: StaticString) -> Attribute {
-        return self.onhashchange(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the anchor part has been changed.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onhashchange(unsafe javascript: String) -> Attribute {
+    public static func onhashchange(_ javascript: String) -> Attribute {
         return .init("onhashchange", javascript)
     }
 
-    public static func onmessage(safe javascript: StaticString) -> Attribute {
-        return self.onmessage(unsafe: String(describing: javascript))
-    }
-
-    public static func onmessage(unsafe javascript: String) -> Attribute {
+    public static func onmessage(_ javascript: String) -> Attribute {
         return .init("onmessage", javascript)
     }
 
     /// Execute JavaScript when the browser starts to work offline.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onoffline(safe javascript: StaticString) -> Attribute {
-        return self.onoffline(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the browser starts to work offline.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onoffline(unsafe javascript: String) -> Attribute {
+    public static func onoffline(_ javascript: String) -> Attribute {
         return .init("onoffline", javascript)
     }
 
     /// Execute JavaScript when the browser starts to work online.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ononline(safe javascript: StaticString) -> Attribute {
-        return self.ononline(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the browser starts to work online.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ononline(unsafe javascript: String) -> Attribute {
+    public static func ononline(_ javascript: String) -> Attribute {
         return .init("ononline", javascript)
     }
 
     /// Execute JavaScript when the user is navigating away from a webpage.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onpagehide(safe javascript: StaticString) -> Attribute {
-        return self.onpagehide(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user is navigating away from a webpage.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onpagehide(unsafe javascript: String) -> Attribute {
+    public static func onpagehide(_ javascript: String) -> Attribute {
         return .init("onpagehide", javascript)
     }
 
     /// Execute JavaScript when a user navigates to a webpage.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onpageshow(safe javascript: StaticString) -> Attribute {
-        return self.onpageshow(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user navigates to a webpage.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onpageshow(unsafe javascript: String) -> Attribute {
+    public static func onpageshow(_ javascript: String) -> Attribute {
         return .init("onpageshow", javascript)
     }
 
-    public static func onpopstate(safe javascript: StaticString) -> Attribute {
-        return self.onpopstate(unsafe: String(describing: javascript))
-    }
-
-    public static func onpopstate(unsafe javascript: String) -> Attribute {
+    public static func onpopstate(_ javascript: String) -> Attribute {
         return .init("onpopstate", javascript)
     }
 
     /// Execute JavaScript when the browser window is resized.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onresize(safe javascript: StaticString) -> Attribute {
-        return self.onresize(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the browser window is resized.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onresize(unsafe javascript: String) -> Attribute {
+    public static func onresize(_ javascript: String) -> Attribute {
         return .init("onresize", javascript)
     }
 
-    public static func onstorage(safe javascript: StaticString) -> Attribute {
-        return self.onstorage(unsafe: String(describing: javascript))
-    }
-
-    public static func onstorage(unsafe javascript: String) -> Attribute {
+    public static func onstorage(_ javascript: String) -> Attribute {
         return .init("onstorage", javascript)
     }
 
     /// Execute JavaScript when a user unloads the document.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onunload(safe javascript: StaticString) -> Attribute {
-        return self.onunload(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user unloads the document.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onunload(unsafe javascript: String) -> Attribute {
+    public static func onunload(_ javascript: String) -> Attribute {
         return .init("onunload", javascript)
     }
 }
@@ -506,14 +256,7 @@ extension Attribute where Element == Tag.Details {
     /// Execute JavaScript when a `<details>` element is opened or closed.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ontoggle(safe javascript: StaticString) -> Attribute {
-        return self.ontoggle(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a `<details>` element is opened or closed.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ontoggle(unsafe javascript: String) -> Attribute {
+    public static func ontoggle(_ javascript: String) -> Attribute {
         return .init("ontoggle", javascript)
     }
 }
@@ -522,28 +265,14 @@ extension Attribute where Element == Tag.Form {
     /// Execute JavaScript when a form is reset.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onreset(safe javascript: StaticString) -> Attribute {
-        return self.onreset(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a form is reset.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onreset(unsafe javascript: String) -> Attribute {
+    public static func onreset(_ javascript: String) -> Attribute {
         return .init("onreset", javascript)
     }
 
     /// Execute JavaScript when a form is submitted.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onsubmit(safe javascript: StaticString) -> Attribute {
-        return self.onsubmit(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a form is submitted.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onsubmit(unsafe javascript: String) -> Attribute {
+    public static func onsubmit(_ javascript: String) -> Attribute {
         return .init("onsubmit", javascript)
     }
 }
@@ -552,28 +281,14 @@ extension Attribute where Element == Tag.Input {
     /// Execute JavaScript when an input field is invalid.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oninvalid(safe javascript: StaticString) -> Attribute {
-        return self.oninvalid(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when an input field is invalid.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oninvalid(unsafe javascript: String) -> Attribute {
+    public static func oninvalid(_ javascript: String) -> Attribute {
         return .init("oninvalid", javascript)
     }
 
     /// Execute JavaScript when submitting a search.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onsearch(safe javascript: StaticString) -> Attribute {
-        return self.onsearch(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when submitting a search.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onsearch(unsafe javascript: String) -> Attribute {
+    public static func onsearch(_ javascript: String) -> Attribute {
         return .init("onsearch", javascript)
     }
 }
@@ -590,14 +305,7 @@ extension Attribute where Element: HasOnabort {
     /// Execute JavaScript if loading of a resource is aborted.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onabort(safe javascript: StaticString) -> Attribute {
-        return self.onabort(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript if loading of a resource is aborted.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onabort(unsafe javascript: String) -> Attribute {
+    public static func onabort(_ javascript: String) -> Attribute {
         return .init("onabort", javascript)
     }
 }
@@ -606,14 +314,7 @@ extension Attribute where Element == Tag.Track {
     /// Execute JavaScript when the cue changes in a `<track>` element.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oncuechange(safe javascript: StaticString) -> Attribute {
-        return self.oncuechange(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the cue changes in a `<track>` element.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oncuechange(unsafe javascript: String) -> Attribute {
+    public static func oncuechange(_ javascript: String) -> Attribute {
         return .init("oncuechange", javascript)
     }
 }
@@ -629,14 +330,7 @@ extension Attribute where Element: HasOncanplay {
     /// Execute JavaScript when a resource is ready to start playing.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oncanplay(safe javascript: StaticString) -> Attribute {
-        return self.oncanplay(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a resource is ready to start playing.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oncanplay(unsafe javascript: String) -> Attribute {
+    public static func oncanplay(_ javascript: String) -> Attribute {
         return .init("oncanplay", javascript)
     }
 }
@@ -650,14 +344,7 @@ extension Attribute where Element: HasOncanplaythrough {
     /// Execute JavaScript when a resource can be played all the way through, without stopping.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oncanplaythrough(safe javascript: StaticString) -> Attribute {
-        return self.oncanplaythrough(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a resource can be played all the way through, without stopping.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oncanplaythrough(unsafe javascript: String) -> Attribute {
+    public static func oncanplaythrough(_ javascript: String) -> Attribute {
         return .init("oncanplaythrough", javascript)
     }
 }
@@ -672,14 +359,7 @@ extension Attribute where Element: HasOnchange {
     /// Execute JavaScript when a user changes the value of a form control.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onchange(safe javascript: StaticString) -> Attribute {
-        return self.onchange(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user changes the value of a form control.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onchange(unsafe javascript: String) -> Attribute {
+    public static func onchange(_ javascript: String) -> Attribute {
         return .init("onchange", javascript)
     }
 }
@@ -693,14 +373,7 @@ extension Attribute where Element: HasOndurationchange {
     /// Execute JavaScript when the media is ready to start playing.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ondurationchange(safe javascript: StaticString) -> Attribute {
-        return self.ondurationchange(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the media is ready to start playing.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ondurationchange(unsafe javascript: String) -> Attribute {
+    public static func ondurationchange(_ javascript: String) -> Attribute {
         return .init("ondurationchange", javascript)
     }
 }
@@ -711,11 +384,7 @@ extension Tag.Audio: HasOnemptied {}
 extension Tag.Video: HasOnemptied {}
 
 extension Attribute where Element: HasOnemptied {
-    public static func onemptied(safe javascript: StaticString) -> Attribute {
-        return self.onemptied(unsafe: String(describing: javascript))
-    }
-
-    public static func onemptied(unsafe javascript: String) -> Attribute {
+    public static func onemptied(_ javascript: String) -> Attribute {
         return .init("onemptied", javascript)
     }
 }
@@ -729,14 +398,7 @@ extension Attribute where Element: HasOnended {
     /// Execute JavaScript when the media has stopped playing.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onended(safe javascript: StaticString) -> Attribute {
-        return self.onended(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the media has stopped playing.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onended(unsafe javascript: String) -> Attribute {
+    public static func onended(_ javascript: String) -> Attribute {
         return .init("onended", javascript)
     }
 }
@@ -752,11 +414,7 @@ extension Tag.Script: HasOnerror {}
 extension Tag.Video: HasOnerror {}
 
 extension Attribute where Element: HasOnerror {
-    public static func onerror(safe javascript: StaticString) -> Attribute {
-        return self.onerror(unsafe: String(describing: javascript))
-    }
-
-    public static func onerror(unsafe javascript: String) -> Attribute {
+    public static func onerror(_ javascript: String) -> Attribute {
         return .init("onerror", javascript)
     }
 }
@@ -770,14 +428,7 @@ extension Attribute where Element: HasOninput {
     /// Execute JavaScript when a user writes something in a text field.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func oninput(safe javascript: StaticString) -> Attribute {
-        return self.oninput(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when a user writes something in a text field.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func oninput(unsafe javascript: String) -> Attribute {
+    public static func oninput(_ javascript: String) -> Attribute {
         return .init("oninput", javascript)
     }
 }
@@ -796,14 +447,7 @@ extension Attribute where Element: HasOnload {
     /// Execute JavaScript immediately after a page has been loaded.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onload(safe javascript: StaticString) -> Attribute {
-        return self.onload(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript immediately after a page has been loaded.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onload(unsafe javascript: String) -> Attribute {
+    public static func onload(_ javascript: String) -> Attribute {
         return .init("onload", javascript)
     }
 }
@@ -814,11 +458,7 @@ extension Tag.Audio: HasOnloadeddata {}
 extension Tag.Video: HasOnloadeddata {}
 
 extension Attribute where Element: HasOnloadeddata {
-    public static func onloadeddata(safe javascript: StaticString) -> Attribute {
-        return self.onloadeddata(unsafe: String(describing: javascript))
-    }
-
-    public static func onloadeddata(unsafe javascript: String) -> Attribute {
+    public static func onloadeddata(_ javascript: String) -> Attribute {
         return .init("onloadeddata", javascript)
     }
 }
@@ -829,11 +469,7 @@ extension Tag.Audio: HasOnloadedmetadata {}
 extension Tag.Video: HasOnloadedmetadata {}
 
 extension Attribute where Element: HasOnloadedmetadata {
-    public static func onloadedmetadata(safe javascript: StaticString) -> Attribute {
-        return self.onloadedmetadata(unsafe: String(describing: javascript))
-    }
-
-    public static func onloadedmetadata(unsafe javascript: String) -> Attribute {
+    public static func onloadedmetadata(_ javascript: String) -> Attribute {
         return .init("onloadedmetadata", javascript)
     }
 }
@@ -844,11 +480,7 @@ extension Tag.Audio: HasOnloadstart {}
 extension Tag.Video: HasOnloadstart {}
 
 extension Attribute where Element: HasOnloadstart {
-    public static func onloadstart(safe javascript: StaticString) -> Attribute {
-        return self.onloadstart(unsafe: String(describing: javascript))
-    }
-
-    public static func onloadstart(unsafe javascript: String) -> Attribute {
+    public static func onloadstart(_ javascript: String) -> Attribute {
         return .init("onloadstart", javascript)
     }
 }
@@ -862,14 +494,7 @@ extension Attribute where Element: HasOnpause {
     /// Execute JavaScript when media has been paused.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onpause(safe javascript: StaticString) -> Attribute {
-        return self.onpause(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when media has been paused.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onpause(unsafe javascript: String) -> Attribute {
+    public static func onpause(_ javascript: String) -> Attribute {
         return .init("onpause", javascript)
     }
 }
@@ -883,14 +508,7 @@ extension Attribute where Element: HasOnplay {
     /// Execute JavaScript when media has been played.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onplay(safe javascript: StaticString) -> Attribute {
-        return self.onplay(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when media has been played.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onplay(unsafe javascript: String) -> Attribute {
+    public static func onplay(_ javascript: String) -> Attribute {
         return .init("onplay", javascript)
     }
 }
@@ -904,14 +522,7 @@ extension Attribute where Element: HasOnplaying {
     /// Execute JavaScript when media is ready to start after having been paused.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onplaying(safe javascript: StaticString) -> Attribute {
-        return self.onplaying(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when media is ready to start after having been paused.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onplaying(unsafe javascript: String) -> Attribute {
+    public static func onplaying(_ javascript: String) -> Attribute {
         return .init("onplaying", javascript)
     }
 }
@@ -925,14 +536,7 @@ extension Attribute where Element: HasOnprogress {
     /// Execute JavaScript when media is downloading.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onprogress(safe javascript: StaticString) -> Attribute {
-        return self.onprogress(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when media is downloading.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onprogress(unsafe javascript: String) -> Attribute {
+    public static func onprogress(_ javascript: String) -> Attribute {
         return .init("onprogress", javascript)
     }
 }
@@ -946,14 +550,7 @@ extension Attribute where Element: HasOnratechange {
     /// Execute JavaScript when the playing speed of media is changed.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onratechange(safe javascript: StaticString) -> Attribute {
-        return self.onratechange(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the playing speed of media is changed.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onratechange(unsafe javascript: String) -> Attribute {
+    public static func onratechange(_ javascript: String) -> Attribute {
         return .init("onratechange", javascript)
     }
 }
@@ -967,14 +564,7 @@ extension Attribute where Element: HasOnseeked {
     /// Execute JavaScript when the user is finished moving/skipping to a new position in media.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onseeked(safe javascript: StaticString) -> Attribute {
-        return self.onseeked(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user is finished moving/skipping to a new position in media.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onseeked(unsafe javascript: String) -> Attribute {
+    public static func onseeked(_ javascript: String) -> Attribute {
         return .init("onseeked", javascript)
     }
 }
@@ -988,14 +578,7 @@ extension Attribute where Element: HasOnseeking {
     /// Execute JavaScript when the user starts moving/skipping to a new position in the media.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onseeking(safe javascript: StaticString) -> Attribute {
-        return self.onseeking(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the user starts moving/skipping to a new position in the media.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onseeking(unsafe javascript: String) -> Attribute {
+    public static func onseeking(_ javascript: String) -> Attribute {
         return .init("onseeking", javascript)
     }
 }
@@ -1009,14 +592,7 @@ extension Attribute where Element: HasOnselect {
     /// Execute JavaScript when some text has been selected.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onselect(safe javascript: StaticString) -> Attribute {
-        return self.onselect(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when some text has been selected.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onselect(unsafe javascript: String) -> Attribute {
+    public static func onselect(_ javascript: String) -> Attribute {
         return .init("onselect", javascript)
     }
 }
@@ -1030,14 +606,7 @@ extension Attribute where Element: HasOnstalled {
     /// Execute JavaScript when the browser is trying to get media data, but data is not available.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onstalled(safe javascript: StaticString) -> Attribute {
-        return self.onstalled(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the browser is trying to get media data, but data is not available.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onstalled(unsafe javascript: String) -> Attribute {
+    public static func onstalled(_ javascript: String) -> Attribute {
         return .init("onstalled", javascript)
     }
 }
@@ -1051,14 +620,7 @@ extension Attribute where Element: HasOnsuspend {
     /// Execute JavaScript when the browser is intentionally not getting media data.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onsuspend(safe javascript: StaticString) -> Attribute {
-        return self.onsuspend(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the browser is intentionally not getting media data.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onsuspend(unsafe javascript: String) -> Attribute {
+    public static func onsuspend(_ javascript: String) -> Attribute {
         return .init("onsuspend", javascript)
     }
 }
@@ -1072,14 +634,7 @@ extension Attribute where Element: HasOntimeupdate {
     /// Execute JavaScript when the current playback position has changed.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func ontimeupdate(safe javascript: StaticString) -> Attribute {
-        return self.ontimeupdate(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the current playback position has changed.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func ontimeupdate(unsafe javascript: String) -> Attribute {
+    public static func ontimeupdate(_ javascript: String) -> Attribute {
         return .init("ontimeupdate", javascript)
     }
 }
@@ -1093,14 +648,7 @@ extension Attribute where Element: HasOnvolumechange {
     /// Execute JavaScript when the volume of a video has been changed.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onvolumechange(safe javascript: StaticString) -> Attribute {
-        return self.onvolumechange(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the volume of a video has been changed.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onvolumechange(unsafe javascript: String) -> Attribute {
+    public static func onvolumechange(_ javascript: String) -> Attribute {
         return .init("onvolumechange", javascript)
     }
 }
@@ -1114,14 +662,7 @@ extension Attribute where Element: HasOnwaiting {
     /// Execute JavaScript when the media stops because it needs to buffer the next frame.
     ///
     /// - Parameter javascript: JavaScript to execute.
-    public static func onwaiting(safe javascript: StaticString) -> Attribute {
-        return self.onwaiting(unsafe: String(describing: javascript))
-    }
-
-    /// Execute JavaScript when the media stops because it needs to buffer the next frame.
-    ///
-    /// - Parameter javascript: JavaScript to execute.
-    public static func onwaiting(unsafe javascript: String) -> Attribute {
+    public static func onwaiting(_ javascript: String) -> Attribute {
         return .init("onwaiting", javascript)
     }
 }
