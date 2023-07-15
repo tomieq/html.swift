@@ -89,7 +89,7 @@ private func render(_ node: Node, into output: inout String) {
 }
 
 private func render(_ attribs: [(String, String?)], into output: inout String) {
-    attribs
+    mergeAttributes(attribs, mergable: ["class", "style"])
         .forEach { key, value in
             guard let value = value else { return }
             output.append(" ")
@@ -100,4 +100,17 @@ private func render(_ attribs: [(String, String?)], into output: inout String) {
                 output.append("\"")
             }
         }
+}
+
+func mergeAttributes(_ attribs: [(String, String?)], mergable: [String]) -> [(String, String?)] {
+    var attributes = attribs
+    for attribute in mergable {
+        let classAttr = attributes.filter{ $0.0 == attribute }
+        if !classAttr.isEmpty {
+            let mergedValue = classAttr.compactMap { $0.1 }.joined(separator: " ")
+            attributes = attributes.filter{ $0.0 != attribute }
+            attributes.append((attribute, mergedValue))
+        }
+    }
+    return attributes
 }

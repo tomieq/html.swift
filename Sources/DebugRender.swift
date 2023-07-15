@@ -1,15 +1,3 @@
-public struct Config {
-    public let indentation: String
-    public let newline: String
-
-    public init(indentation: String, newline: String) {
-        self.indentation = indentation
-        self.newline = newline
-    }
-
-    public static let pretty = Config(indentation: "  ", newline: "\n")
-}
-
 public func debugRender(_ nodes: [Node], config: Config = .pretty) -> String {
     return nodes
         .map { debugRender($0, config: config) }
@@ -67,7 +55,7 @@ public func debugRender(_ node: Node, config: Config = .pretty) -> String {
             output.append(tag)
             var renderedAttr = false
             let keyIndentation = String(repeating: " ", count: indentation.count + tag.count + 2)
-            for (k, v) in attrs {
+            for (k, v) in mergeAttributes(attrs, mergable: ["class", "style"]) {
                 guard let v = v else { continue }
                 if renderedAttr {
                     output.append(config.newline)
