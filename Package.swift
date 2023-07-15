@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "html.swift",
+    name: "html",
     products: [
         .library(
-            name: "html.swift",
-            targets: ["html.swift"]),
+            name: "html",
+            targets: ["html"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "html.swift",
+            name: "html",
             dependencies: [],
             path: "Sources"),
     ]
