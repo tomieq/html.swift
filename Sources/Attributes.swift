@@ -667,10 +667,6 @@ extension Attribute where Element == Tag.Script {
     public static func nonce(_ value: String) -> Attribute {
         return .init("nonce", value)
     }
-
-    public static func integrity(_ value: String) -> Attribute {
-        return .init("integrity", value)
-    }
 }
 
 extension Attribute where Element == Tag.Source {
@@ -804,6 +800,17 @@ extension Attribute where Element == Tag.Track {
 extension Attribute where Element == Tag.Video {
     public static func poster(_ value: String) -> Attribute {
         return .init("poster", value)
+    }
+}
+
+public protocol HasIntegrity {}
+
+extension Tag.Script: HasIntegrity {}
+extension Tag.Link: HasIntegrity {}
+
+extension Attribute where Element: HasIntegrity {
+    public static func integrity(_ value: String) -> Attribute {
+        return .init("integrity", value)
     }
 }
 
