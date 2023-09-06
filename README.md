@@ -35,3 +35,22 @@ let document: Node = .document(
 
 print(document.prettyRender)
 ```
+## Swift Package Manager
+
+In order to add library to your project, add to your Package.swift:
+```swift
+// swift-tools-version: 5.7
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "YourApp",
+    dependencies: [
+        .package(url: "https://github.com/tomieq/html.swift.git", .branch("master"))
+    ],
+    targets: [
+        ...
+    ]
+)
+```
